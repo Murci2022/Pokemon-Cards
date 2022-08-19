@@ -44,3 +44,8 @@ p {
   width: 200px;
   height: auto;
 }
+
+.header--a {
+  display: flex;
+  justify-content: center;
+}
