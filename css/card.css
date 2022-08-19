@@ -10,11 +10,12 @@
   color: #666666;
   width: 400px;
   height: 100px;
-  border: #eadc10 solid 3px;
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  -webkit-box-shadow: 8px 8px 17px -4px rgba(0, 0, 0, 0.39);
+  box-shadow: 8px 8px 17px -4px rgba(0, 0, 0, 0.29);
 }
 
 .card--button {
