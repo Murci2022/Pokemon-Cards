@@ -18,6 +18,8 @@ function createPokemonList(pokemons) {
     item.className = 'pokemon__list-infos';
 
     item.textContent = pokemon.name;
+    
     item.append(item);
   });
 }
+
