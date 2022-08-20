@@ -1,0 +1,14 @@
+.list {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: rgb(244, 161, 255);
+  color: color;
+  list-style-type: none;
+  padding: 8px;
+  border-radius: 8px;
+  margin: 10px;
+
+}
