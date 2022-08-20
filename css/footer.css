@@ -11,8 +11,9 @@ footer {
 }
 
 .footer--button {
-  height: 64px;
-  width: 64px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
   border: none;
-  background-color: transparent;
+  background-color: #fbffb4;
 }
