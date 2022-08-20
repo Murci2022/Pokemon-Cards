@@ -11,9 +11,22 @@ footer {
 }
 
 .footer--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
   height: 48px;
   width: 48px;
   border-radius: 50%;
   border: none;
   background-color: #fbffb4;
+}
+
+.footer--button:focus {
+  background-color: white;
+  outline: #ffcb02 5px solid;
+}
+
+.footer--button_img {
+  height: 28px;
 }
