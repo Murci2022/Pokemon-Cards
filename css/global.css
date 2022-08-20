@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: grid;
+    background-color: #fbffb4;
+  }
+  
+  h2 {
+    font-weight: 400;
+    font-size: 22px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  p {
+    padding: 25px;
+  }
