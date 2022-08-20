@@ -7,7 +7,7 @@ async function fetchPokemon() {
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
-console.log(data.results)
+    console.log(data.results)
 
     createPokemonList(data.results);
     console.log(data)
@@ -23,18 +23,18 @@ fetchPokemon(apiUrl);
  */
 function createPokemonList(pokemons) {
   const list = document.createElement('ul');
-  list.className = 'pokemon__list';
+  list.className = 'list';
   document.body.append(list);
 
   pokemons.forEach(pokemon => {
     const item = document.createElement('li');
-    item.className = 'pokemon__list-infos';
+    item.className = 'item';
 
     item.innerHTML = `
-     /* <h2></h2>  */
+     <h2>${pokemon.name}</h2> 
      
      <ul>
-     <li>$[{ability.name}] </li>
+     <li>${pokemon.name}</li>
      
    </ul>
      
@@ -42,3 +42,5 @@ function createPokemonList(pokemons) {
     list.append(item);
   });
 }
+
+fetchPokemon();
