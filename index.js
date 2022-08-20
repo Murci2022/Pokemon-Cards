@@ -33,10 +33,8 @@ function createPokemonList(pokemons) {
     item.innerHTML = `
      <h2>${pokemon.name}</h2> 
      
-     <ul>
-     <li>${pokemon.name}</li>
      
-   </ul>
+    
      
      `;
     list.append(item);
