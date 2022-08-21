@@ -94,7 +94,9 @@ div {
   /* display: none; */
 }
 
-
+.hidden {
+display: none;
+}
 
 
 
