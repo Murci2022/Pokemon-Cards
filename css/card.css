@@ -1,17 +1,117 @@
-.card {
-  background-color: #ffffe3;
-  color: #2c5491;
-  width: 400px;
-  height: 100px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 30px;
-  -webkit-box-shadow: 8px 8px 17px -4px rgba(0, 0, 0, 0.19);
-  box-shadow: 8px 8px 17px -4px rgba(0, 0, 0, 0.19);
+/* -----------------THIS IS "BODY"-------- */
+/* -----------------THIS IS "BODY"-------- */
+div {
+  background-color: rgb(194, 194, 194);
 }
 
+.pokedex {
+  border: 10px dotted black;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  margin: 125px 0;
+}
+
+/* ---------THIS IS CARD---------------------------- */
+/* ---------THIS IS CARD---------------------------- */
+
+.pokedex__card {
+  border: 10px solid black;
+  position: relative;
+  
+	background: rgb(244, 161, 255);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 250px;
+	height: auto;
+	color: color;
+	padding: 20px;
+	border-radius: 8px;
+	margin: 20px;
+	cursor: pointer;
+	box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.pokedex__card:hover {
+	box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* ----------------this is crd/top/left */
+
+.pokedex__card-id {
+  border: 5px dotted red;
+	font-weight: 500;
+	align-self: flex-start;
+}
+
+/* ----------------this is crd/top/right - (icon) */
+.icon-card  {
+
+  border: 5px solid black;
+  position: absolute;
+  top: -25px;
+  right: -16px;
+  
+  
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  
+  /* align-items: center; */
+  padding-left: 30px;
+
+}
 .card--icon_down {
+  border: 5px dotted goldenrod;
   fill: #eadc10;
 }
+.card--icon_down:hover{
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.8);
+  fill: #565540;
+}
+
+/* -------- POKEMON IMG -------- */
+
+.pokedex__card-img {
+	background-color: white;
+	border-radius:50%;
+	width: 200px;
+	height: auto;
+}
+
+/* --------------POKEMON NAME ----- */
+.pokedex__card-name {
+  border: 3px dotted yellow;
+	font-weight: 700;
+}
+
+/* -----------Pokemon toggle Info ---- */
+.type {
+  border: 5px dotted yellow;
+  margin-top: 5px;
+  /* display: none; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
