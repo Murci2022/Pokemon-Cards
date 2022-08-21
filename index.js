@@ -85,5 +85,3 @@ button.addEventListener("click", () => {
 //    button.textContent = "Hide answer";
 // }
 // });
-
-ca
