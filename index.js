@@ -71,7 +71,7 @@ function createPokedexCard(data) {
 }
 
 
-const button = cardElement.querySelectorAll('[data-js="cardElement"]');
+const button = cardElement.querySelector('[data-js="cardElement"]');
 // const answer = cardElement.querySelectorAll('[data-js="dropdownAnswer"]');
 
 
