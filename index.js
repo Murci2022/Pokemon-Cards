@@ -2,6 +2,7 @@
 const pokedex = document.getElementById('pokedex');
 const pokemon_count =150;
 
+
 async function fetchPokemons() {
   try {
     for (let i = 1; i <= pokemon_count; i++) {
@@ -45,6 +46,7 @@ function createPokedexCard(data) {
 
  
   <button class="icon-card" data-js="cardElement">
+
   
   <svg
     class="card--icon_down"
@@ -58,6 +60,7 @@ function createPokedexCard(data) {
 </button>
 
 
+
   <h2 class="pokedex__card-name">${data.name.toUpperCase()}</h2>
 
 <div class="hidden">
@@ -66,9 +69,13 @@ function createPokedexCard(data) {
   <span class="type">Height: ${data.height}</span>
 </div>
   
+
+
+  
      `;
   pokedex.append(card);
 }
+
 
 
 const button = cardElement.querySelector('[data-js="cardElement"]');
@@ -85,3 +92,4 @@ button.addEventListener("click", () => {
 //    button.textContent = "Hide answer";
 // }
 // });
+
