@@ -1,19 +1,19 @@
 header {
-    background-color: #eadc10;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    height: 125px;
-    width: 100%;
-    z-index: 10;
-  }
-  
-  .header--a {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .header--logo {
-    width: 200px;
-    height: auto;
-  }
+  background-color: #eadc10;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  height: 125px;
+  width: 100%;
+  z-index: 10;
+}
+
+.header--a {
+  display: flex;
+  justify-content: center;
+}
+
+.header--logo {
+  width: 200px;
+  height: auto;
+}
