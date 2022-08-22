@@ -36,16 +36,20 @@ fetchPokemon(apiUrl); */
  */
 function createPokedexCard(data) {
   const imageUrl = data.sprites.other["official-artwork"].front_default;
+
+  /* console.log(imageUrl) */
   
   const card = document.createElement("div");
+  const btn = document.createElement('button')
   card.className = "pokedex__card";
+  
   card.innerHTML = `
   
   <span class="pokedex__card-id">No.${data.id}</span>
   <img class="pokedex__card-img" src=${imageUrl} alt="image"/>
 
  
-  <button class="icon-card" data-js="cardElement">
+  <button class="icon-card btn" data-js="button">
 
   
   <svg
@@ -63,33 +67,34 @@ function createPokedexCard(data) {
 
   <h2 class="pokedex__card-name">${data.name.toUpperCase()}</h2>
 
-<div class="hidden">
+
+ 
+ <div class="hidden"></div>
   <span class="type">Type: ${data.types[0].type.name}</span>
   <span class="type">Weight: ${data.weight}</span>
   <span class="type">Height: ${data.height}</span>
-</div>
-  
-
 
   
      `;
+
+     btn.className = 'btn';
+     btn.innerText ='click'
+
   pokedex.append(card);
+  /* card.append(btn); */
+  
 }
 
 
-
-const button = cardElement.querySelector('[data-js="cardElement"]');
-// const answer = cardElement.querySelectorAll('[data-js="dropdownAnswer"]');
+const button = document.querySelectorAll('.btn');
+const answer = document.querySelector('.type');
 
 
 console.log(answer.classList);
-button.addEventListener("click", () => {
-  answer.classList.toggle("hidden"); } )
+btn.addEventListener("click", () => {
+  answer.classList.toggle("hidden"); 
+});
 
-//   if (answer.classList.contains("hidden")) {
-//     button.textContent = "Show answer";
-// } else {
-//    button.textContent = "Hide answer";
-// }
-// });
+
+
 
